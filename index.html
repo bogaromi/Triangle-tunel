@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Triangle tunnel Practice JavaScript by drawing</title>
+</head>
+<body>
+  <canvas id="myCanvas" height="300" width="450" style="border: 1px solid black"></canvas>
+<script id="jsbin-javascript">
+function triangleTunnel(){
+var c = document.getElementById('myCanvas').getContext('2d');
+var x = 80;
+var y = 25;
+var a = 140;
+var b = 100;
+var z = 20;
+var d = 120;
+
+for (i=0;i<=20;i++){
+var k = (i*10);
+c.beginPath();
+c.moveTo(x+k,y+k);
+c.lineTo(z+k,b+k);
+c.lineTo(d+k,b+k);
+c.lineTo(a+k,b+k);
+c.closePath();
+c.stroke();
+}
+  }
+triangleTunnel();
+</script>
+
+
+
+<script id="jsbin-source-javascript" type="text/javascript">function triangleTunnel(){
+var c = document.getElementById('myCanvas').getContext('2d');
+var x = 80;
+var y = 25;
+var a = 140;
+var b = 100;
+var z = 20;
+var d = 120;
+
+for (i=0;i<=20;i++){
+var k = (i*10);
+c.beginPath();
+c.moveTo(x+k,y+k);
+c.lineTo(z+k,b+k);
+c.lineTo(d+k,b+k);
+c.lineTo(a+k,b+k);
+c.closePath();
+c.stroke();
+}
+  }
+triangleTunnel();</script></body>
+</html>
